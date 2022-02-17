@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/evernote/step_definitions",
         dryRun = false,
-        tags = "@todo"
+        tags = "@smoke"
 )
 public class CukesRunner {
 }

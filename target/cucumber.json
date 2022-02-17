@@ -1,13 +1,307 @@
 [
   {
-    "line": 2,
+    "line": 3,
     "elements": [
       {
-        "start_timestamp": "2022-02-17T14:02:38.853Z",
+        "start_timestamp": "2022-02-17T17:58:11.160Z",
         "before": [
           {
             "result": {
-              "duration": 2668943700,
+              "duration": 2605570000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.evernote.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Login with valid credentials",
+        "description": "",
+        "id": "successful-login-check;login-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 748105100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.evernote.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3912737300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.evernote.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6623069400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user enters valid credentials",
+            "match": {
+              "location": "com.evernote.step_definitions.LoginStepDefs.the_user_enters_valid_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3033311600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user should be able to login",
+            "match": {
+              "location": "com.evernote.step_definitions.LoginStepDefs.the_user_should_be_able_to_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Successful login check",
+    "description": "",
+    "id": "successful-login-check",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-17T17:58:28.164Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1590279200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.evernote.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Login with valid credentials",
+        "description": "",
+        "id": "note-created-check;login-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 798847100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.evernote.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4024853400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.evernote.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6255520600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user enters valid credentials",
+            "match": {
+              "location": "com.evernote.step_definitions.LoginStepDefs.the_user_enters_valid_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3017214100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user should be able to login",
+            "match": {
+              "location": "com.evernote.step_definitions.LoginStepDefs.the_user_should_be_able_to_login()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5024239300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user should be able to see the created note",
+            "match": {
+              "location": "com.evernote.step_definitions.WriteNoteLogoutStepDefs.theUserShouldBeAbleToSeeTheCreatedNote()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Note Created Check",
+    "description": "",
+    "id": "note-created-check",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/loginAndCheckNote.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-17T17:58:48.876Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1559656900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.evernote.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Unsuccessful login with wrong email",
+        "description": "",
+        "id": "unsuccessful-login-check;unsuccessful-login-with-wrong-email",
+        "after": [
+          {
+            "result": {
+              "duration": 724780300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.evernote.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4150885700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.evernote.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3237437700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user enters wrong username",
+            "match": {
+              "location": "com.evernote.step_definitions.LoginStepDefs.the_user_enters_wrong_username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31242500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user should NOT be able to login",
+            "match": {
+              "location": "com.evernote.step_definitions.LoginStepDefs.the_user_should_NOT_be_able_to_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Unsuccessful login check",
+    "description": "",
+    "id": "unsuccessful-login-check",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/no.Login.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-17T17:58:58.596Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1449234400,
               "status": "passed"
             },
             "match": {
@@ -22,7 +316,7 @@
         "after": [
           {
             "result": {
-              "duration": 809377800,
+              "duration": 769066800,
               "status": "passed"
             },
             "match": {
@@ -35,7 +329,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3866726300,
+              "duration": 3900823200,
               "status": "passed"
             },
             "line": 5,
@@ -47,7 +341,7 @@
           },
           {
             "result": {
-              "duration": 7593472700,
+              "duration": 6221989500,
               "status": "passed"
             },
             "line": 6,
@@ -59,7 +353,7 @@
           },
           {
             "result": {
-              "duration": 3019114200,
+              "duration": 3013879100,
               "status": "passed"
             },
             "line": 7,
@@ -71,7 +365,7 @@
           },
           {
             "result": {
-              "duration": 7475888100,
+              "duration": 5804708000,
               "status": "passed"
             },
             "line": 8,
@@ -89,7 +383,7 @@
           },
           {
             "result": {
-              "duration": 11628499900,
+              "duration": 17055589700,
               "status": "passed"
             },
             "line": 9,
@@ -101,7 +395,7 @@
           },
           {
             "result": {
-              "duration": 387169300,
+              "duration": 334106900,
               "status": "passed"
             },
             "line": 10,
@@ -114,7 +408,7 @@
         ],
         "tags": [
           {
-            "name": "@todo"
+            "name": "@smoke"
           }
         ]
       }
@@ -126,7 +420,7 @@
     "uri": "file:src/test/resources/features/writeNoteLogout.feature",
     "tags": [
       {
-        "name": "@todo",
+        "name": "@smoke",
         "type": "Tag",
         "location": {
           "line": 1,

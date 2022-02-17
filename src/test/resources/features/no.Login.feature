@@ -1,4 +1,4 @@
-
+@smoke
 Feature: Unsuccessful login check
 
   Scenario: Unsuccessful login with wrong email

@@ -1,4 +1,4 @@
-@todo
+@smoke
 Feature: Login and write a note followed by a logout
 
   Scenario:

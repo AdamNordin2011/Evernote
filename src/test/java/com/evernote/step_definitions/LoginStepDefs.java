@@ -12,6 +12,7 @@ import org.openqa.selenium.By;
 public class LoginStepDefs {
 HomePage homePage = new HomePage();
 LoginPage loginPage = new LoginPage();
+
     @Given("the user is on the login page")
     public void the_user_is_on_the_login_page() throws InterruptedException {
         String url = ConfigurationReader.get("url");
@@ -53,6 +54,4 @@ LoginPage loginPage = new LoginPage();
        String expectedMessage = "There is no account for the username or email you entered.";
        Assert.assertEquals(expectedMessage, loginPage.responseMessage.getText());
     }
-
-
 }

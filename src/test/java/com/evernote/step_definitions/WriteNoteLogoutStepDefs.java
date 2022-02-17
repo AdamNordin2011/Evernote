@@ -7,6 +7,8 @@ import com.evernote.utilities.Driver;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
 
+import java.sql.SQLOutput;
+
 
 public class WriteNoteLogoutStepDefs {
 
@@ -25,24 +27,31 @@ public class WriteNoteLogoutStepDefs {
 
         basePage.title.sendKeys(ConfigurationReader.get("title"));
         basePage.note.sendKeys(ConfigurationReader.get("note"));
-        BrowserUtils.waitFor(1); //for being seen
+        BrowserUtils.waitFor(3); //for being seen
+        Driver.get().switchTo().parentFrame();
+        basePage.homeButton.click();
+        BrowserUtils.waitFor(3);
     }
 
     @Then("the user signs out")
     public void the_user_signs_out() {
 
-        Driver.get().switchTo().parentFrame();
         basePage.userID.click();
         basePage.signOut.click();
 
-        String expectedTitle = "Notes - Evernote";
+        String expectedTitle = "Home - Evernote";
         String actualTitle = Driver.get().getTitle();
         Assert.assertEquals(expectedTitle, actualTitle);
 
         }
 
-
+    @Then("the user should be able to see the created note")
+    public void theUserShouldBeAbleToSeeTheCreatedNote() {
+        String expectedNote = ConfigurationReader.get("title");
+        String actualNote = basePage.adamsNoteTitle.getText();
+        Assert.assertEquals(expectedNote,actualNote);
     }
+}
 
 
 

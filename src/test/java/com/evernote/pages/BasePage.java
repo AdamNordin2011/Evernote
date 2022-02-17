@@ -31,4 +31,13 @@ public class BasePage {
     @FindBy(id = "qa-ACCOUNT_DROPDOWN_LOGOUT")
     public WebElement signOut;
 
+    @FindBy(id = "58b9e9a1-ef7c-6017-4eab-344d0874daa0")
+    public WebElement createdNote;
+
+    @FindBy(xpath = "//*[@id=\"qa-NAV_HOME\"]/span")
+    public WebElement homeButton;
+
+    @FindBy(xpath = "//span[normalize-space()='AdamsNotesTitle']")
+    public WebElement adamsNoteTitle;
+
 }
