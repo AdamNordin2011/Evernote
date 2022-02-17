@@ -1,9 +1,12 @@
 package com.evernote.pages;
 
 import com.evernote.utilities.Driver;
+import org.jsoup.select.Evaluator;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import java.util.List;
 
 public class BasePage {
 
@@ -17,5 +20,15 @@ public class BasePage {
     public WebElement NoteButton;
 
     @FindBy(xpath = "//textarea[@placeholder='Title']")
-    public WebElement toDoList;
+    public WebElement title;
+
+    @FindBy(xpath = "//*[@id=\"en-note\"]/div")
+    public WebElement note;
+
+    @FindBy(xpath = "//*[@id=\"qa-NAV_USER\"]/div/div/span/div/div[1]/div")
+    public WebElement userID;
+
+    @FindBy(id = "qa-ACCOUNT_DROPDOWN_LOGOUT")
+    public WebElement signOut;
+
 }
