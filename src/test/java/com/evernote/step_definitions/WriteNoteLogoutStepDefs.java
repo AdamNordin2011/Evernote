@@ -45,11 +45,15 @@ public class WriteNoteLogoutStepDefs {
 
         }
 
-    @Then("the user should be able to see the created note")
+    @Then("the user should be able to open the created note")
     public void theUserShouldBeAbleToSeeTheCreatedNote() {
-        String expectedNote = ConfigurationReader.get("title");
-        String actualNote = basePage.adamsNoteTitle.getText();
-        Assert.assertEquals(expectedNote,actualNote);
+
+        basePage.adamsNoteTitle.click();
+
+        Driver.get().switchTo().frame("qa-COMMON_EDITOR_IFRAME");
+
+        boolean displayed = basePage.openedNote.isDisplayed();
+        Assert.assertTrue(displayed);
     }
 }
 

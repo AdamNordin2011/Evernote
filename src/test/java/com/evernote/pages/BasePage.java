@@ -40,4 +40,7 @@ public class BasePage {
     @FindBy(xpath = "//span[normalize-space()='AdamsNotesTitle']")
     public WebElement adamsNoteTitle;
 
+    @FindBy(xpath = "/html/body/en-noteheader/div/div[2]/textarea")
+    public WebElement openedNote;
+
 }

@@ -1,6 +1,5 @@
 package com.evernote.step_definitions;
 
-import com.evernote.utilities.DBUtils;
 import com.evernote.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -28,17 +27,5 @@ public class Hooks {
         Driver.closeDriver();
 
     }
-
-    @Before("@db")
-    public void setUpdb(){
-        DBUtils.createConnection();
-    }
-
-    @After("@db")
-    public void closeDb(){
-        DBUtils.destroy();
-    }
-
-
 
 }
